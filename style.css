@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+body{
+    position: relative;
+    
+}
+
+nav{
+    background-color: lightgreen;
+    width: 100%;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    padding: 35px;
+    align-items:start;
+    width: 100%;
+}
+
+
+.navbar .logo{
+    font-weight: bold;
+    font-size: 30px;
+    background-color: none;
+    color: black;
+    transition: color 0.3s ease;
+    text-decoration:none;
+    letter-spacing: 2px;
+
+}
+
+i{
+    font-size:40px;
+}
+
+.search-container{
+    display: flex; 
+    align-items: center;
+    height: 40px;
+
+}
+
+.search-container #search-input{
+    height: 40px;
+    width: 300px;
+    border-radius: 18px;
+    margin: 10px;
+}
+
+::placeholder{
+    font-weight: bold;
+    font-size: medium;
+    font-style: normal;
+}
+
+.search-container #search-button{
+    margin: solid black 3px;
+    height: 40px;
+    width: 80px;
+    font-weight: bold;
+    border-radius: 10px;
+   background-color: lightgreen; 
+}
+
+#cards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+    flex-wrap: wrap;
+    
+}
+    
+
+.card{
+    
+    height: 280px;
+    width: 350px;
+    margin:10px;
+    border: 3px solid blue;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;;
+    padding-bottom: 2px;
+    
+
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+.card h3{
+    color:darkgreen;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.card p{
+    font-weight: lighter;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+@media (max-width: 500px){
+    .navbar{
+        font-size: 10px;
+    }
+    i{
+        font-size: 25px;
+    }
+
+    .search-container{
+        width: 20px;
+        padding-right: 220px;
+    }
+
+    #search-input{
+        width: 2px;
+        padding: 10px 10px;
+    }
+
+    .navbar .logo{
+        font-size: 25px;
+    }
+
+    #search-button{
+        padding-right: 10px;
+    }
+    
+    .card{
+        width:100%;
+    }
+}
